@@ -213,16 +213,16 @@
 
   <!-- COLOR DEFINITIONS -->
   <gazebo reference="camera">
-    <material>Gazebo/Red</material>
+    <material>Gazebo/Blue</material>
   </gazebo>
   <gazebo reference="left_wheel">
-    <material>Gazebo/Green</material>
+    <material>Gazebo/Purple</material>
   </gazebo>
   <gazebo reference="right_wheel">
-    <material>Gazebo/Green</material>
+    <material>Gazebo/Purple</material>
   </gazebo>
   <gazebo reference="chassis">
-    <material>Gazebo/Blue</material>
+    <material>Gazebo/Yellow</material>
   </gazebo>
 
 
