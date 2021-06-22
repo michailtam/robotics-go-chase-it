@@ -45,14 +45,8 @@ $ roslaunch my_robot world.launch
 $ source devel/setup.bash
 $ roslaunch ball_chaser ball_chaser.launch
 ```
-3. Open a third terminal and issue
-```
-$ source devel/setup.bash
-$ rosrun rqt_image_view rqt_image_view
-```
 
-Move the white ball near the robot view range so the robot starts to chase it. Setup the Rviz parameters as shown
-in the bellow video.
+The overall process to run the simulation and to setup up Rviz accordingly are also shown in the video bekow.
 
 #### Video
 <a href="https://www.youtube.com/embed/0WqCSpGcEX0" target="_blank">
