@@ -2,7 +2,7 @@
 In this robotics simulation a custom *mobile robot* chases a white ball which gets placed by the user in an office building
 in [gazebo](http://gazebosim.org/). The robot uses a camera to determine if there is a white ball or not and a laser scanner ([Lidar](https://en.wikipedia.org/wiki/Lidar)) to map the building. The interactions of the robot get implemented using [ROS-Kinetic](https://www.ros.org/) and C++. To track what the robot sees and senses the 3D visualization tool [Rviz tool for ROS](http://wiki.ros.org/rviz) gets used. 
 
-### Feutures
+### Features
 - Only white balls are getting chased (e.g. if the robot sees red ball it stops)
 - The robot changes its direction based on odometry measurements
 - When there is no ball in its view range, the robot stops immediately
