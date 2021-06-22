@@ -10,7 +10,7 @@ in [gazebo](http://gazebosim.org/). The robot uses a camera to determine if ther
 - To get the data from the laser scanner the robot subsrcibes to the **/scan topic**
 - The supported laser scanners in ROS are [these](http://wiki.ros.org/Sensors#A2D_range_finders) here
 
-### Prerequisite
+### Prerequisites
 This project assumes that you are using Ubuntu (tested on Ubuntu 20.4 LST) and that ROS, gazebo and all required packages
 are installed.
 
@@ -50,4 +50,4 @@ The overall process to run the simulation and to setup up Rviz accordingly are a
 
 #### Video
 <a href="https://www.youtube.com/embed/0WqCSpGcEX0" target="_blank">
-<img src="https://github.com/michailtam/go-chase-it/blob/master/img/go-chase-it.png" alt="Go Chase It (ROS) Video" width="560" height="288" border="0" />
+<img src="https://github.com/michailtam/go-chase-it/blob/master/img/go-chase-it.png" alt="Go Chase It (ROS) Video" width="760" height="488" border="0" />
