@@ -10,16 +10,12 @@ in [gazebo](http://gazebosim.org/). The robot uses a camera to determine if ther
 - To get the data from the laser scanner the robot subsrcibes to the **/scan topic**
 - The supported laser scanners in ROS are [these](http://wiki.ros.org/Sensors#A2D_range_finders) here
 
-#### Video
-<a href="https://www.youtube.com/embed/0WqCSpGcEX0" target="_blank">
-<img src="https://github.com/michailtam/go-chase-it/blob/master/img/go-chase-it.png" alt="Go Chase It (ROS) Video" width="560" height="288" border="0" />
-
 ### Prerequisite
 This project assumes that you are using Ubuntu (tested on Ubuntu 20.4 LST) and that ROS, gazebo and all required packages
-are installed. 
+are installed.
 
 ### Installation
-To run the simulation follow the following steps:
+To install the repository follow the following steps:
 
 1. Clone the repository ```$ git clone https://github.com/michailtam/go-chase-it.git```
 2. Create the **src** folder in the catkin_workspace ```$ mkdir -p go-chase-it/.Project2/src```
@@ -36,4 +32,28 @@ $ cd ..
 $ catkin_make
 ```
 
-### Running
+### Running the simulation
+To run the simulation follow the following steps:
+
+1. Open a terminal change into the toplevel of the catkin workspace and issue
+```
+$ source devel/setup.bash
+$ roslaunch my_robot world.launch
+```
+2. Open a second terminal (also change to toplevel) and issue
+```
+$ source devel/setup.bash
+$ roslaunch ball_chaser ball_chaser.launch
+```
+3. Open a third terminal and issue
+```
+$ source devel/setup.bash
+$ rosrun rqt_image_view rqt_image_view
+```
+
+Move the white ball near the robot view range so the robot starts to chase it. Setup the Rviz parameters as shown
+in the bellow video.
+
+#### Video
+<a href="https://www.youtube.com/embed/0WqCSpGcEX0" target="_blank">
+<img src="https://github.com/michailtam/go-chase-it/blob/master/img/go-chase-it.png" alt="Go Chase It (ROS) Video" width="560" height="288" border="0" />
