@@ -1,6 +1,6 @@
 # Robotics Simulation - Go Chase It
-In this robotics simulation a custom *mobile robot* chases a white ball which gets placed by the user in an office building
-in [gazebo](http://gazebosim.org/). The robot uses a camera to determine if there is a white ball or not and a laser scanner ([Lidar](https://en.wikipedia.org/wiki/Lidar)) to map the building. The interactions of the robot get implemented using [ROS-Kinetic](https://www.ros.org/) and C++. To track what the robot sees and senses the 3D visualization tool [Rviz tool for ROS](http://wiki.ros.org/rviz) gets used. 
+In this robotics simulation a custom *mobile robot* chases a white ball which gets placed by the user in the office building
+in [gazebo](http://gazebosim.org/). The robot uses a camera to determine if there is a white ball or not and a laser scanner ([Lidar](https://en.wikipedia.org/wiki/Lidar)) to map the environment. The interactions of the robot get implemented using [ROS-Kinetic](https://www.ros.org/) and C++. To track what the robot sees and senses the 3D visualization tool [Rviz tool for ROS](http://wiki.ros.org/rviz) gets used. 
 
 ### Features
 - Only white balls are getting chased (e.g. if the robot sees red ball it stops)
@@ -12,7 +12,7 @@ in [gazebo](http://gazebosim.org/). The robot uses a camera to determine if ther
 
 ### Prerequisites
 This project assumes that you are using Ubuntu (tested on Ubuntu 20.4 LST) and that ROS, gazebo and all required packages
-are installed.
+are installed. The installation instructions can be found [here](http://wiki.ros.org/kinetic/Installation/Ubuntu) and [here](http://gazebosim.org/tutorials?tut=install_ubuntu).
 
 ### Installation
 To install the repository follow the following steps:
