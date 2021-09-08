@@ -10,7 +10,7 @@ In this robotics simulation a custom *mobile robot* chases a white ball in an of
 - The supported laser scanners in ROS can be found [here](http://wiki.ros.org/Sensors#A2D_range_finders)
 
 ### White ball determination algorithm
-
+To determine the orientation the robot has to move after it has seen a white ball, each image captured by the camera gets divided into a left, front and right part. This operation gets executed by the functions ```process_image_callback(const sensor_msgs::Image img)``` and ```determine_ball_position(int pos, int width) ```. The first one takes as parameter the current image and checks if the image contains a white ball. If this is the case, the function processes the index number of the column and the width of the image. This is necessary, because the robot has to calculate the linear x and angular z velocities to strafe the robot towards the ball. After the function has returned these values, the ```drive_bot(vel.linear_x, vel.angular_z)``` function calls the service ```command_robot``` which executes the movement of the robot.
 
 ### Prerequisites
 This project assumes that you are using Ubuntu (tested on Ubuntu 20.4 LST) and that ROS, gazebo and all required packages
@@ -48,4 +48,4 @@ The overall process to run the simulation and to see how the robot chases white 
 
 #### Video
 <a href="https://www.youtube.com/embed/0WqCSpGcEX0" target="_blank">
-<img src="https://github.com/michailtam/go-chase-it/blob/master/img/go-chase-it.png" alt="Go Chase It (ROS) Video" width="760" height="400" border="0" />
+<img src="https://github.com/michailtam/robotics-go-chase-it/blob/master/images/video_preview.png" alt="Go Chase It (ROS) Video" width="760" height="400" border="0" />
